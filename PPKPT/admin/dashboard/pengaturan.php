@@ -253,7 +253,12 @@
                                 <hr class="border-slate-200 dark:border-slate-700">
                                 <div>
                                     <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Password Baru</label>
-                                    <input type="password" class="w-full rounded-md border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white py-2 px-3 shadow-sm focus:ring-primary" required>
+                                    <input type="password" name="password" class="w-full rounded-md border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white py-2 px-3 shadow-sm focus:ring-primary" required>
+                                </div>
+                                <hr class="border-slate-200 dark:border-slate-700">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Konfirmasi Password Baru</label>
+                                    <input type="password" name="confirm_password" class="w-full rounded-md border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white py-2 px-3 shadow-sm focus:ring-primary" required>
                                 </div>
                             </div>
                         </div>
