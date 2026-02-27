@@ -36,7 +36,7 @@
         }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-200 min-h-screen flex flex-col transition-colors duration-300 antialiased">
+<body class="bg-slate-200 text-slate-800 dark:bg-slate-950 dark:text-slate-200 min-h-screen flex flex-col transition-colors duration-300 antialiased">
 
     <!-- Navbar (Simplified) -->
     <nav class="bg-white border-b border-slate-200 dark:bg-slate-900 dark:border-slate-800 transition-colors duration-300">
