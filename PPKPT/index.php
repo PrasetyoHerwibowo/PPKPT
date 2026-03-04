@@ -50,8 +50,16 @@
                     <span class="text-2xl font-bold text-primary">PPKPT <span class="text-slate-700 dark:text-slate-400 font-semibold">Polije</span></span>
                 </div>
                 <div class="flex items-center space-x-4">
+                     <!-- Komponen Search -->
+                    <div class="relative ">
+                        <input 
+                            type="search" 
+                            placeholder="Cari Laporan..." 
+                            class="w-full sm:w-56 px-4 py-2 text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-500 bg-slate-200 dark:bg-slate-800 rounded-full shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-slate-100 dark:focus-within:ring-offset-slate-900 transition-colors duration-300" />
+                    </div>
+
                     <a href="#" class="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary font-medium transition-colors">Beranda</a>
-                    <a href="#lapor" class="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary font-medium transition-colors">Lapor</a>
+                    <a href="#form-lapor" class="text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary font-medium transition-colors">Lapor</a>
 
                     <!-- Theme Toggle Button -->
                     <button id="theme-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary focus:outline-none transition-colors rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
@@ -178,7 +186,7 @@
 
             <div class="mt-8 text-center p-6 bg-blue-50/50 dark:bg-blue-900/10 rounded-xl border border-blue-100 dark:border-blue-800/30 transition-colors duration-300">
                 <p class="text-slate-600 dark:text-slate-400 text-sm font-medium">
-                    <span class="font-bold text-blue-700 dark:text-blue-400">Butuh bantuan darurat?</span> Hubungi Call Center Satgas PPKS: <br>
+                    <span class="font-bold text-blue-700 dark:text-blue-400">Butuh bantuan darurat?</span> Hubungi Call Center Satgas PPKPT: <br>
                     <span class="text-2xl font-bold mt-2 block text-slate-800 dark:text-slate-200 tracking-wider">0812-3456-7890</span>
                 </p>
             </div>
@@ -222,9 +230,9 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3">
   <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
 </svg>
-                     <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Segera Laporkan ke Satgas PPKS</h3>
+                     <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Segera Laporkan ke Satgas PPKPT</h3>
                 </div>
-                <p class="text-slate-500 dark:text-slate-400 text-sm m-3 mt-4 leading-relaxed text-start">Jangan ragu untuk segera melaporkan kejadian kekerasan yang Anda alami kepada Satgas PPKS Politeknik Negeri Jember melalui formulir di atas atau hubungi call center kami.</p>
+                <p class="text-slate-500 dark:text-slate-400 text-sm m-3 mt-4 leading-relaxed text-start">Jangan ragu untuk segera melaporkan kejadian kekerasan yang Anda alami kepada Satgas PPKPT Politeknik Negeri Jember melalui formulir di atas atau hubungi call center kami.</p>
             </div>
         </div>
     </section>
@@ -234,7 +242,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
             <div>
                 <span class="text-lg font-bold text-slate-800 dark:text-slate-200">PPKPT Polije</span>
-                <p class="text-slate-500 dark:text-slate-500 text-sm mt-1">© 2026 Satgas PPKS Politeknik Negeri Jember. <br class="md:hidden">All rights reserved.</p>
+                <p class="text-slate-500 dark:text-slate-500 text-sm mt-1">© 2026 Satgas PPKPT Politeknik Negeri Jember. <br class="md:hidden">All rights reserved.</p>
             </div>
             <div class="flex flex-wrap justify-center gap-6 md:gap-8">
                 <a href="#" class="text-slate-500 hover:text-primary dark:text-slate-500 dark:hover:text-slate-300 text-sm font-medium transition-colors">Privacy Policy</a>
