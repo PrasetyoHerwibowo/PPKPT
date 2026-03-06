@@ -160,6 +160,29 @@
                         </div>
                     </div>
 
+                     <!-- TKP & Bukti Pendukung -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label for="tkp" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Tempat Perkara (TKP)</label>
+                            <input type="text" id="tkp" name="tkp" required
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary focus:bg-white dark:focus:bg-slate-800 transition-all placeholder-slate-400 dark:placeholder-slate-500 outline-none"
+                                placeholder="Cth: Dedung Teknik..">
+                        </div>
+                        <div>
+                            <label for="bukti" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Bukti Pendukung</label>
+                            <input type="text" id="bukti" name="bukti" required
+                                class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary focus:bg-white dark:focus:bg-slate-800 transition-all placeholder-slate-400 dark:placeholder-slate-500 outline-none"
+                                placeholder="Cth: Foto, Video, Dokumen...">
+                        </div>
+                    </div>
+                    
+                    <!-- Waktu Kejadian -->
+                    <div>
+                        <label for="tanggal" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Waktu Kejadian</label>
+                        <input type="datetime-local" id="tanggal" name="tanggal" required
+                            class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary focus:bg-white dark:focus:bg-slate-800 transition-all placeholder-slate-400 dark:placeholder-slate-500 outline-none"
+                            placeholder="Masukkan tanggal kejadian">
+                    </div>
                     <!-- Kronologi -->
                     <div>
                         <label for="kronologi" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Kronologi Singkat Kejadian</label>
