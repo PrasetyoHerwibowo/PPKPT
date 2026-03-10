@@ -119,7 +119,7 @@
                     <p class="text-slate-400 mt-2 text-sm leading-relaxed">Silakan isi formulir di bawah ini dengan data yang sebenar-benarnya. Identitas pelapor akan dijaga kerahasiaannya sesuai kode etik.</p>
                 </div>
 
-                <form action="" method="POST" class="p-8 lg:p-10 space-y-8">
+                <form action="../proses_laporan.php" method="POST" class="p-8 lg:p-10 space-y-8">
                     <!-- Nama Lengkap -->
                     <div>
                         <label for="nama" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Nama Lengkap</label>
@@ -206,6 +206,67 @@
                     </div>
                 </form>
             </div>
+
+            <!-- Pop up after Laporan -->
+             <div id="popup-success" class="fixed inset-0 flex items-center justify-center bg-black/50 hidden">
+
+    <div class="bg-white rounded-xl shadow-xl p-6 w-96 text-center">
+
+        <div class="flex justify-center mb-4">
+            <div class="bg-green-100 p-3 rounded-full">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 13l4 4L19 7"/>
+                </svg>
+            </div>
+        </div>
+
+        <h2 class="text-xl font-semibold text-gray-800">
+            Laporan Berhasil
+        </h2>
+
+        <p class="text-gray-500 mt-2">
+            Terima kasih, laporan Anda telah dikirim.
+        </p>
+
+        <button onclick="closePopup()"
+        class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
+        OK
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch("../proses_laporan.php",{
+        method:"POST",
+        body:formData
+    });
+
+    const result = await response.json();
+
+    if(result.status === "success"){
+        document.getElementById("popup-success").classList.remove("hidden");
+        form.reset();
+    }
+
+});
+
+function closePopup(){
+    document.getElementById("popup-success").classList.add("hidden");
+}
+
+</script>
 
             <div class="mt-8 text-center p-6 bg-blue-50/50 dark:bg-blue-900/10 rounded-xl border border-blue-100 dark:border-blue-800/30 transition-colors duration-300">
                 <p class="text-slate-600 dark:text-slate-400 text-sm font-medium">
