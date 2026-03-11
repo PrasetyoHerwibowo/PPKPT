@@ -73,7 +73,7 @@
                         </svg>
                     </button>
 
-                    <a href="../PPKPT/login" class="px-5 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors text-sm font-semibold shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-slate-900">Login Admin</a>
+                    <a href="./auth/login.php" class="px-5 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors text-sm font-semibold shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-slate-900">Login Admin</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <p class="text-slate-400 mt-2 text-sm leading-relaxed">Silakan isi formulir di bawah ini dengan data yang sebenar-benarnya. Identitas pelapor akan dijaga kerahasiaannya sesuai kode etik.</p>
                 </div>
 
-                <form action="../proses_laporan.php" method="POST" class="p-8 lg:p-10 space-y-8">
+                <form action="./laporan/proses_laporan.php" method="POST" class="p-8 lg:p-10 space-y-8">
                     <!-- Nama Lengkap -->
                     <div>
                         <label for="nama" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Nama Lengkap</label>
