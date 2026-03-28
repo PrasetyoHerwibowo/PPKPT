@@ -113,11 +113,16 @@
                 <div class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
 
                     <main class="flex-1 flex flex-col min-w-0 bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
-                        <div class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
-                            <div class="max-w-4xl mx-auto space-y-6">
+                        <div class="flex-1 overflow-y-auto ">
+                            <div class="mb-8">
+                        <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Profile Pengguna</h2>
+                        <p class="text-sm text-slate-500 dark:text-slate-400"> Kelola informasi dasar, keamanan akun, dan pengaturan sistem dengan mudah melalui panel administrasi.</p>
+                   
+                    </div>
+                            <div class=" mx-auto space-y-6">
 
                                 <div class="bg-white dark:bg-slate-800 shadow rounded-lg border border-slate-100 dark:border-slate-700">
-                                    <div class="px-6 py-5 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
+                                    <div class="px-4 py-5 border-b border-slate-200 dark:border-slate-700 flex justify-between items-center">
                                         <div>
                                             <h3 class="text-lg font-medium text-slate-900 dark:text-white">Informasi Profil</h3>
                                             <p class="text-sm text-slate-500 dark:text-slate-400">Kelola informasi dasar akun Anda.</p>

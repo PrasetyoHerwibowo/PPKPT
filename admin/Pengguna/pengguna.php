@@ -112,7 +112,7 @@
             <!-- Dashboard Content -->
             <div class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
 
-                <div class="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8">
+                <div class="flex-1 overflow-y-auto">
                     <div class="mb-8">
                         <h2 class="text-2xl font-bold text-slate-800 dark:text-white">Manajemen Pengguna</h2>
                         <p class="text-sm text-slate-500 dark:text-slate-400">Kelola data admin dan pengguna sistem PPKPT.</p>
