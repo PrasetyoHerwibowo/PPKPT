@@ -180,8 +180,10 @@
                     <div>
                         <label for="tanggal" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Waktu Kejadian</label>
                         <input type="datetime-local" id="tanggal" name="tanggal" required
-                            class="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary focus:bg-white dark:focus:bg-slate-800 transition-all placeholder-slate-400 dark:placeholder-slate-500 outline-none"
+                            class="cursor-pointer w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary focus:bg-white dark:focus:bg-slate-800 transition-all placeholder-slate-400 dark:placeholder-slate-500 outline-none"
+                             onclick="document.getElementById('tanggal').showPicker()"
                             placeholder="Masukkan tanggal kejadian">
+                            
                     </div>
                     <!-- Kronologi -->
                     <div>
@@ -206,7 +208,7 @@
                     </div>
                 </form>
             </div>
-
+    
             <!-- Pop up after Laporan -->
              <div id="popup-success" class="fixed inset-0 flex items-center justify-center bg-black/50 hidden">
 
@@ -238,35 +240,6 @@
 
 </div>
 
-<script>
-
-const form = document.querySelector("form");
-
-form.addEventListener("submit", async function(e){
-
-    e.preventDefault();
-
-    const formData = new FormData(form);
-
-    const response = await fetch("../proses_laporan.php",{
-        method:"POST",
-        body:formData
-    });
-
-    const result = await response.json();
-
-    if(result.status === "success"){
-        document.getElementById("popup-success").classList.remove("hidden");
-        form.reset();
-    }
-
-});
-
-function closePopup(){
-    document.getElementById("popup-success").classList.add("hidden");
-}
-
-</script>
 
             <div class="mt-8 text-center p-6 bg-blue-50/50 dark:bg-blue-900/10 rounded-xl border border-blue-100 dark:border-blue-800/30 transition-colors duration-300">
                 <p class="text-slate-600 dark:text-slate-400 text-sm font-medium">
@@ -280,7 +253,7 @@ function closePopup(){
     <section class="bg-white py-16 lg:py-24 dark:bg-slate-950 transition-colors duration-300 relative overflow-hidden">
         <div class="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-800/[0.2] bg-[bottom_1px_center] opacity-40 pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-medium text-sm mb-6 border border-blue-100 dark:border-blue-800">
+            <div class="inline-flex items-center px-4 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-medium text-sm mb-6 border border-blue-100 dark:border-blue-800">
                 <span class="w-2 h-2 rounded-full bg-blue-500 mr-2 animate-pulse"></span>
                 LANGKAH PENTING
             </div>
@@ -312,8 +285,8 @@ function closePopup(){
                 <div class="bg-slate-50 dark:bg-slate-900 w-1/3 h-56 rounded-md  shadow-lg shadow-slate-400/50 dark:shadow-none border border-slate-200 dark:border-slate-800 hover:-translate-y-2 transition transform">
                     <div class="flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3">
-  <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
-</svg>
+                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+            </svg>
                      <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Segera Laporkan ke Satgas PPKPT</h3>
                 </div>
                 <p class="text-slate-500 dark:text-slate-400 text-sm m-3 mt-4 leading-relaxed text-start">Jangan ragu untuk segera melaporkan kejadian kekerasan yang Anda alami kepada Satgas PPKPT Politeknik Negeri Jember melalui formulir di atas atau hubungi call center kami.</p>
@@ -336,6 +309,35 @@ function closePopup(){
         </div>
     </footer>
 
+    <script>
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch("../proses_laporan.php",{
+        method:"POST",
+        body:formData
+    });
+
+    const result = await response.json();
+
+    if(result.status === "success"){
+        document.getElementById("popup-success").classList.remove("hidden");
+        form.reset();
+    }
+
+});
+
+function closePopup(){
+    document.getElementById("popup-success").classList.add("hidden");
+}
+
+</script>
     <script>
         var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
         var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');

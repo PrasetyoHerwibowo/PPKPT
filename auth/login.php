@@ -45,7 +45,7 @@
                 <div class="flex items-center">
                     <a href="../index.php" class="text-2xl font-bold text-primary">PPKPT <span class="text-slate-700 dark:text-slate-400 font-semibold">Polije</span></a>
                 </div>
-                <div class="flex items-center space-x-4">
+                <div class="flex items-end space-x-4">
                      <!-- Theme Toggle Button -->
                      <button id="theme-toggle" class="p-2 text-slate-500 hover:text-primary dark:text-slate-400 dark:hover:text-primary focus:outline-none transition-colors rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800">
                         <!-- Sun Icon -->
