@@ -50,11 +50,11 @@
                     <span class="text-2xl font-bold text-primary">PPKPT <span class="text-slate-700 dark:text-slate-400 font-semibold">Polije</span></span>
                 </div>
                 <div class="flex items-center space-x-4">
-                     <!-- Komponen Search -->
+                    <!-- Komponen Search -->
                     <div class="relative ">
-                        <input 
-                            type="search" 
-                            placeholder="Cari Laporan..." 
+                        <input
+                            type="search"
+                            placeholder="Cari Laporan..."
                             class="w-full sm:w-56 px-4 py-2 text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-500 bg-slate-200 dark:bg-slate-800 rounded-full shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-slate-100 dark:focus-within:ring-offset-slate-900 transition-colors duration-300" />
                     </div>
 
@@ -160,7 +160,7 @@
                         </div>
                     </div>
 
-                     <!-- TKP & Bukti Pendukung -->
+                    <!-- TKP & Bukti Pendukung -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>
                             <label for="tkp" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Tempat Perkara (TKP)</label>
@@ -175,15 +175,15 @@
                                 placeholder="Cth: Foto, Video, Dokumen...">
                         </div>
                     </div>
-                    
+
                     <!-- Waktu Kejadian -->
                     <div>
                         <label for="tanggal" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Waktu Kejadian</label>
                         <input type="datetime-local" id="tanggal" name="tanggal" required
                             class="cursor-pointer w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-primary focus:border-primary focus:bg-white dark:focus:bg-slate-800 transition-all placeholder-slate-400 dark:placeholder-slate-500 outline-none"
-                             onclick="document.getElementById('tanggal').showPicker()"
+                            onclick="document.getElementById('tanggal').showPicker()"
                             placeholder="Masukkan tanggal kejadian">
-                            
+
                     </div>
                     <!-- Kronologi -->
                     <div>
@@ -208,37 +208,37 @@
                     </div>
                 </form>
             </div>
-    
+
             <!-- Pop up after Laporan -->
-             <div id="popup-success" class="fixed inset-0 flex items-center justify-center bg-black/50 hidden">
+            <div id="popup-success" class="fixed inset-0 flex items-center justify-center bg-black/50 hidden">
 
-    <div class="bg-white rounded-xl shadow-xl p-6 w-96 text-center">
+                <div class="bg-white rounded-xl shadow-xl p-6 w-96 text-center">
 
-        <div class="flex justify-center mb-4">
-            <div class="bg-green-100 p-3 rounded-full">
-                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M5 13l4 4L19 7"/>
-                </svg>
+                    <div class="flex justify-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <h2 class="text-xl font-semibold text-gray-800">
+                        Laporan Berhasil
+                    </h2>
+
+                    <p class="text-gray-500 mt-2">
+                        Terima kasih, laporan Anda telah dikirim.
+                    </p>
+
+                    <button onclick="closePopup()"
+                        class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
+                        OK
+                    </button>
+
+                </div>
+
             </div>
-        </div>
-
-        <h2 class="text-xl font-semibold text-gray-800">
-            Laporan Berhasil
-        </h2>
-
-        <p class="text-gray-500 mt-2">
-            Terima kasih, laporan Anda telah dikirim.
-        </p>
-
-        <button onclick="closePopup()"
-        class="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg">
-        OK
-        </button>
-
-    </div>
-
-</div>
 
 
             <div class="mt-8 text-center p-6 bg-blue-50/50 dark:bg-blue-900/10 rounded-xl border border-blue-100 dark:border-blue-800/30 transition-colors duration-300">
@@ -250,7 +250,12 @@
         </div>
     </section>
 
-    <section class="bg-white py-16 lg:py-24 dark:bg-slate-950 transition-colors duration-300 relative overflow-hidden">
+    <section class="bg-white py-16 lg:py-24 transition-all duration-300 relative overflow-hidden
+                /* Mode Terang */
+                text-slate-900
+                /* Mode Gelap (V3) */
+                dark:bg-slate-950 
+                dark:bg-gradient-to-r dark:from-slate-950/60 dark:via-slate-900/60 dark:to-slate-950">
         <div class="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-800/[0.2] bg-[bottom_1px_center] opacity-40 pointer-events-none"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div class="inline-flex items-center px-4 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 font-medium text-sm mb-6 border border-blue-100 dark:border-blue-800">
@@ -260,36 +265,36 @@
             <h1 class="text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-6 leading-tight">
                 Jika Anda Menjadi Korban <br>Tindak Kekerasan
             </h1>
-            <div class="flex">
-                <div class="bg-slate-50 dark:bg-slate-900 w-1/3 h-40 rounded-md  shadow-lg shadow-slate-400/50 dark:shadow-none border border-slate-200 dark:border-slate-800 hover:-translate-y-2 transition transform">
+            <div class="flex gap-4 p-5 flex-col md:flex-row justify-center h-auto">
+                <div class="bg-white dark:bg-slate-900 w-1/4 rounded-md shadow-md border  border-slate-200 dark:border-slate-800 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl dark:hover:shadow-indigo-800/60">
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3 dark:text-white dark:bg-blue-900/60 rounded-md p-2">
                             <path fill-rule="evenodd" d="M8.25 6.75a3.75 3.75 0 1 1 7.5 0 3.75 3.75 0 0 1-7.5 0ZM15.75 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM2.25 9.75a3 3 0 1 1 6 0 3 3 0 0 1-6 0ZM6.31 15.117A6.745 6.745 0 0 1 12 12a6.745 6.745 0 0 1 6.709 7.498.75.75 0 0 1-.372.568A12.696 12.696 0 0 1 12 21.75c-2.305 0-4.47-.612-6.337-1.684a.75.75 0 0 1-.372-.568 6.787 6.787 0 0 1 1.019-4.38Z" clip-rule="evenodd" />
                             <path d="M5.082 14.254a8.287 8.287 0 0 0-1.308 5.135 9.687 9.687 0 0 1-1.764-.44l-.115-.04a.563.563 0 0 1-.373-.487l-.01-.121a3.75 3.75 0 0 1 3.57-4.047ZM20.226 19.389a8.287 8.287 0 0 0-1.308-5.135 3.75 3.75 0 0 1 3.57 4.047l-.01.121a.563.563 0 0 1-.373.486l-.115.04c-.567.2-1.156.349-1.764.441Z" />
                         </svg>
-                        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Jangan Menyalahkan Diri Sendiri</h3>
+                        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200 text-start">Jangan Menyalahkan Diri Sendiri</h3>
                     </div>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm m-3 ml-3 mt-2 leading-relaxed text-start">Ingatlah bahwa kekerasan bukanlah kesalahan Anda. Anda berhak mendapatkan dukungan dan perlindungan.</p>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm m-3 ml-3 mt-2 leading-relaxed text-start">Kekerasan bukanlah kesalahan Anda. Anda adalah korban dan berhak mendapatkan dukungan serta perlindungan hukum yang layak.</p>
                 </div>
-                <div class="bg-slate-50 dark:bg-slate-900 w-1/3 h-48 rounded-md  shadow-lg shadow-slate-400/50 dark:shadow-none border border-slate-200 dark:border-slate-800 hover:-translate-y-2 transition transform">
+                <div class="bg-white dark:bg-slate-900 w-1/4 rounded-md shadow-md border border-slate-200 dark:border-slate-800 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl dark:hover:shadow-indigo-800/60">
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3 dark:text-white dark:bg-blue-900/60 rounded-md p-2">
                             <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 0 1 3-3h3a3 3 0 0 1 3 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0 1 12 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 0 1 7.5 5.455V5.25Zm7.5 0v.09a49.488 49.488 0 0 0-6 0v-.09a1.5 1.5 0 0 1 1.5-1.5h3a1.5 1.5 0 0 1 1.5 1.5Zm-3 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
                             <path d="M3 18.4v-2.796a4.3 4.3 0 0 0 .713.31A26.226 26.226 0 0 0 12 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 0 1-6.477-.427C4.047 21.128 3 19.852 3 18.4Z" />
                         </svg>
-                        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Kumpulkan Bukti Kekerasan</h3>
-
+                        <h3 class="text-lg text-start font-bold text-slate-800 dark:text-slate-200">Kumpulkan Bukti Kekerasan</h3>
                     </div>
-                    <p class="text-slate-500 dark:text-slate-400 text-sm m-3 mt-2 leading-relaxed text-start">Kumpulkan bukti sebanyak mungkin, seperti rekam medis atau dokumentasi luka yang Anda alami akibat kekerasan</p>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm m-3 mt-2 leading-relaxed text-start">Kumpulkan bukti sebanyak mungkin seperti rekam medis, foto luka, dan dokumentasi lainnya untuk keperluan penyelidikan.</p>
                 </div>
-                <div class="bg-slate-50 dark:bg-slate-900 w-1/3 h-56 rounded-md  shadow-lg shadow-slate-400/50 dark:shadow-none border border-slate-200 dark:border-slate-800 hover:-translate-y-2 transition transform">
+                <div class="bg-white dark:bg-slate-900 w-1/4 rounded-md shadow-md border border-slate-200 dark:border-slate-800 hover:-translate-y-2 transition-all duration-300 hover:shadow-xl dark:hover:shadow-indigo-800/60">
                     <div class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3">
-                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
-            </svg>
-                     <h3 class="text-lg font-bold text-slate-800 dark:text-slate-200">Segera Laporkan ke Satgas PPKPT</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 m-3 dark:text-white dark:bg-blue-900/60 p-2 rounded-md">
+                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                        </svg>
+                        <h3 class="text-lg text-start font-bold text-slate-800 dark:text-slate-200">Segera Laporkan ke Satgas PPKPT</h3>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm m-3 mt-2 leading-relaxed text-start">Lapor kejadian kekerasan kepada PPKPT Polije melalui formulir atau hubungi call center kami dengan segera untuk penanganan cepat.</p>
                 </div>
-                <p class="text-slate-500 dark:text-slate-400 text-sm m-3 mt-4 leading-relaxed text-start">Jangan ragu untuk segera melaporkan kejadian kekerasan yang Anda alami kepada Satgas PPKPT Politeknik Negeri Jember melalui formulir di atas atau hubungi call center kami.</p>
             </div>
         </div>
     </section>
@@ -310,34 +315,32 @@
     </footer>
 
     <script>
+        const form = document.querySelector("form");
 
-const form = document.querySelector("form");
+        form.addEventListener("submit", async function(e) {
 
-form.addEventListener("submit", async function(e){
+            e.preventDefault();
 
-    e.preventDefault();
+            const formData = new FormData(form);
 
-    const formData = new FormData(form);
+            const response = await fetch("../proses_laporan.php", {
+                method: "POST",
+                body: formData
+            });
 
-    const response = await fetch("../proses_laporan.php",{
-        method:"POST",
-        body:formData
-    });
+            const result = await response.json();
 
-    const result = await response.json();
+            if (result.status === "success") {
+                document.getElementById("popup-success").classList.remove("hidden");
+                form.reset();
+            }
 
-    if(result.status === "success"){
-        document.getElementById("popup-success").classList.remove("hidden");
-        form.reset();
-    }
+        });
 
-});
-
-function closePopup(){
-    document.getElementById("popup-success").classList.add("hidden");
-}
-
-</script>
+        function closePopup() {
+            document.getElementById("popup-success").classList.add("hidden");
+        }
+    </script>
     <script>
         var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
         var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
