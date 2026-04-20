@@ -78,7 +78,7 @@
                     <p class="text-slate-500 dark:text-slate-400 mt-2">Masuk untuk mengelola laporan.</p>
                 </div>
 
-                <form action="" method="POST" class="space-y-6">
+                <form action="/app/Controllers/auth/LoginHandler.php" method="POST" class="space-y-6">
                     <div>
                         <label for="username" class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-2">Username / NIP</label>
                         <input type="text" id="username" name="username" required 

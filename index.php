@@ -73,7 +73,7 @@
                         </svg>
                     </button>
 
-                    <a href="./auth/login.php" class="px-5 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors text-sm font-semibold shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-slate-900">Login Admin</a>
+                    <a href="/views/login.php" class="px-5 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 dark:hover:bg-blue-500 transition-colors text-sm font-semibold shadow-sm focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-slate-900">Login Admin</a>
                 </div>
             </div>
         </div>
