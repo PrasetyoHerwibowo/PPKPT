@@ -174,7 +174,7 @@ GET /laporan/delete_laporan.php?id={id}
 ---
 
 ## 📄 Lisensi
-MIT License © 2024 Prasetyo Herwibowo
+MIT License © 2026 Prasetyo Herwibowo
 
 ---
 
